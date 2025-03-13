@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
         //Task 1
         Scanner in = new Scanner(System.in);
         Random rnd = new Random();

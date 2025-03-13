@@ -33,7 +33,6 @@ public class Main {
         System.out.println("The average of the random array dataPoints is: " + average);
 
         //Task 5
-
         int userInt = 0;
         userInt = SafeInput.getRangedInt(in, "Enter an integer value", 1,100);
 

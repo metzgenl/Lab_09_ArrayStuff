@@ -4,10 +4,12 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         //Task 1
+        Scanner in = new Scanner(System.in);
+        Random rnd = new Random();
         int [] dataPoints;
         dataPoints = new int[100];
+
         //Task 2
-        Random rnd = new Random();
         for (int i = 0; i < dataPoints.length; i++){
             dataPoints[i] = rnd.nextInt(100) + 1;
         }
@@ -16,6 +18,7 @@ public class Main {
         for (int i = 0; i < dataPoints.length; i++){
             System.out.printf(dataPoints[i] + " | ");
         }
+
         //Task 4
         System.out.println();
         int sum = 0;
@@ -27,10 +30,12 @@ public class Main {
         average = average / dataPoints.length;
         System.out.println("The sum of the random array dataPoints is: " + sum);
         System.out.println("The average of the random array dataPoints is: " + average);
+
         //Task 5
-        Scanner in = new Scanner(System.in);
+
         int userInt = 0;
         userInt = SafeInput.getRangedInt(in, "Enter an integer value", 1,100);
+
         //Task 6
         int userIntCount = 0;
         for (int i = 0; i < dataPoints.length; i++){
@@ -39,6 +44,7 @@ public class Main {
             }
         }
         System.out.println("Your entered int value appeared " + userIntCount + " times in dataPoints!");
+
         //Task 7
         int userIntAgain = 0;
         Boolean checkFlag = false;
@@ -54,6 +60,7 @@ public class Main {
         if (!(checkFlag)){
             System.out.println("The value " + userIntAgain + " was not found in the dataPoints array");
         }
+
         //Task 8
         int min = dataPoints[0];
         int max = dataPoints[0];
@@ -68,6 +75,7 @@ public class Main {
         }
         System.out.println("The minimum value in the dataPoints array is " + min + ".");
         System.out.println("The maximum value in the dataPoints array is " + max + ".");
+
         //Task 9
         System.out.println("Average of dataPoints is: " + getAverage(dataPoints));
 
